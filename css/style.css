@@ -26,21 +26,15 @@ body {
 
 .hero {
 
-    height: 90vh;
+    height: 280px;
+    background: #0E0F11;
+    color: white;
 
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.45),
-        rgba(0,0,0,0.45)
-    ),
-    url("../images/facade.jpg");
+    position: relative;
 
-    background-size: cover;
-    background-position: center;
-
-    color:white;
-
-    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -112,20 +106,14 @@ body {
 
 .hero-content {
 
-
-    height:100%;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
 
     text-align:center;
 
-    padding:20px;
+    padding:10px;
 
 }
 
@@ -133,9 +121,8 @@ body {
 
 .hero h1 {
 
-    font-size:60px;
-
-    margin-bottom:15px;
+    font-size:42px;
+    letter-spacing:1px;
 
 }
 
@@ -143,7 +130,8 @@ body {
 
 .subtitle {
 
-    font-size:24px;
+    font-size:20px;
+    opacity:0.9;
 
 }
 
@@ -151,13 +139,8 @@ body {
 
 .prix {
 
-    font-size:40px;
-
-    font-weight:bold;
-
-    margin:25px;
-
-    color:#ffd86b;
+    font-size:30px;
+    color:#f1c40f;
 
 }
 
@@ -170,9 +153,9 @@ body {
 
     display:inline-block;
 
-    padding:14px 30px;
+    padding:10px 25px;
 
-    margin:10px;
+    margin:5px;
 
     background:#c49b3b;
 
@@ -204,13 +187,9 @@ body {
 
 
 .section {
-
     max-width:1200px;
-
     margin:auto;
-
-    padding:70px 25px;
-
+    padding:35px 25px;
 }
 
 
@@ -589,5 +568,84 @@ footer {
 }
 
 
+
+}
+
+/* ==========================
+   FLECHES GALERIE
+========================== */
+
+
+#precedente,
+#suivante {
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+
+    padding:15px;
+
+    user-select:none;
+
+    transition:.3s;
+
+}
+
+
+#precedente:hover,
+#suivante:hover {
+
+    color:#d4af37;
+
+}
+
+
+
+#precedente {
+
+    left:30px;
+
+}
+
+
+
+#suivante {
+
+    right:30px;
+
+}
+
+
+
+@media(max-width:768px){
+
+    #precedente,
+    #suivante {
+
+        font-size:35px;
+
+    }
+
+
+    #precedente {
+
+        left:10px;
+
+    }
+
+
+    #suivante {
+
+        right:10px;
+
+    }
 
 }
