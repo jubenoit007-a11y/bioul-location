@@ -515,59 +515,75 @@ footer {
 
 @media(max-width:768px){
 
+    .hero {
 
-.menu {
+        height: auto;
+        min-height: 420px;
+        padding-bottom: 30px;
 
-    flex-direction:column;
-
-}
-
-
-.menu ul {
-
-    margin-top:15px;
-
-    gap:15px;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
+    }
 
 
+    .menu {
 
-.hero h1 {
+        position: relative;
+        padding: 20px;
 
-    font-size:40px;
-
-}
-
-
-
-.subtitle {
-
-    font-size:18px;
-
-}
+    }
 
 
+    .logo {
 
-.prix {
+        font-size:20px;
 
-    font-size:30px;
-
-}
-
+    }
 
 
-.section {
+    .menu ul {
 
-    padding:45px 15px;
+        display:none;
 
-}
+    }
 
 
+    .hero-content {
+
+        padding:40px 20px 20px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:32px;
+        line-height:1.2;
+        margin-bottom:15px;
+
+    }
+
+
+    .subtitle {
+
+        font-size:17px;
+        line-height:1.4;
+
+    }
+
+
+    .prix {
+
+        font-size:28px;
+        margin:15px 0;
+
+    }
+
+
+    .btn {
+
+        padding:12px 22px;
+        font-size:15px;
+
+    }
 
 }
 
