@@ -210,3 +210,22 @@ sections.forEach(section=>{
 
 
 });
+
+
+// =======================================
+// Bouton burger
+// =======================================
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".nav-links");
+
+burger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
+    });
+
+});
